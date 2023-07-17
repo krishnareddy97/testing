@@ -1,0 +1,728 @@
+API: https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=PAR&radius=100&radiusUnit=KM&amenities=SWIMMING_POOL,SPA,FITNESS_CENTER,AIR_CONDITIONING,RESTAURANT,PARKING,PETS_ALLOWED,AIRPORT_SHUTTLE,BUSINESS_CENTER,DISABLED_FACILITIES,WIFI,MEETING_ROOMS,NO_KID_ALLOWED,TENNIS,GOLF,KITCHEN,ANIMAL_WATCHING,BABY-SITTING,BEACH,CASINO,JACUZZI,SAUNA,SOLARIUM,MASSAGE,VALET_PARKING,BAR%20or%20LOUNGE,KIDS_WELCOME,NO_PORN_FILMS,MINIBAR,TELEVISION,WI-FI_IN_ROOM,ROOM_SERVICE,GUARDED_PARKG,SERV_SPEC_MENU&ratings=1,2,3,4,5&hotelSource=ALL
+-------------------------------------------------------------------------------------------
+
+API: https://test.api.amadeus.com/v1/reference-data/locations/cities?countryCode=FR&keyword=PARIS&max=10&include=AIRPORTS
+Method: GET
+API Response:
+{
+  "meta": {
+    "count": 8,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/cities?countryCode=FR&include=AIRPORTS&keyword=PARIS&max=10"
+    }
+  },
+  "data": [
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Paris",
+      "iataCode": "PAR",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-75"
+      },
+      "geoCode": {
+        "latitude": 48.85341,
+        "longitude": 2.3488
+      },
+      "relationships": [
+        {
+          "id": "BVA",
+          "type": "Airport",
+          "href": "#/included/airports/BVA"
+        },
+        {
+          "id": "CDG",
+          "type": "Airport",
+          "href": "#/included/airports/CDG"
+        },
+        {
+          "id": "ORY",
+          "type": "Airport",
+          "href": "#/included/airports/ORY"
+        },
+        {
+          "id": "XCR",
+          "type": "Airport",
+          "href": "#/included/airports/XCR"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Le Touquet-Paris-Plage",
+      "iataCode": "LTQ",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-62"
+      },
+      "geoCode": {
+        "latitude": 50.52432,
+        "longitude": 1.58571
+      },
+      "relationships": [
+        {
+          "id": "LIL",
+          "type": "Airport",
+          "href": "#/included/airports/LIL"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Villeparisis",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-77"
+      },
+      "geoCode": {
+        "latitude": 48.94208,
+        "longitude": 2.61463
+      },
+      "relationships": [
+        {
+          "id": "BVA",
+          "type": "Airport",
+          "href": "#/included/airports/BVA"
+        },
+        {
+          "id": "CDG",
+          "type": "Airport",
+          "href": "#/included/airports/CDG"
+        },
+        {
+          "id": "ORY",
+          "type": "Airport",
+          "href": "#/included/airports/ORY"
+        },
+        {
+          "id": "XCR",
+          "type": "Airport",
+          "href": "#/included/airports/XCR"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Cormeilles-en-Parisis",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-95"
+      },
+      "geoCode": {
+        "latitude": 48.97111,
+        "longitude": 2.20491
+      },
+      "relationships": [
+        {
+          "id": "BVA",
+          "type": "Airport",
+          "href": "#/included/airports/BVA"
+        },
+        {
+          "id": "CDG",
+          "type": "Airport",
+          "href": "#/included/airports/CDG"
+        },
+        {
+          "id": "ORY",
+          "type": "Airport",
+          "href": "#/included/airports/ORY"
+        },
+        {
+          "id": "XCR",
+          "type": "Airport",
+          "href": "#/included/airports/XCR"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Seyssinet-Pariset",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-38"
+      },
+      "geoCode": {
+        "latitude": 45.17675,
+        "longitude": 5.69387
+      },
+      "relationships": [
+        {
+          "id": "CMF",
+          "type": "Airport",
+          "href": "#/included/airports/CMF"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Damparis",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-39"
+      },
+      "geoCode": {
+        "latitude": 47.07556,
+        "longitude": 5.41398
+      },
+      "relationships": [
+        {
+          "id": "GNB",
+          "type": "Airport",
+          "href": "#/included/airports/GNB"
+        },
+        {
+          "id": "LYS",
+          "type": "Airport",
+          "href": "#/included/airports/LYS"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Fontenay-en-Parisis",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-95"
+      },
+      "geoCode": {
+        "latitude": 49.05371,
+        "longitude": 2.45156
+      },
+      "relationships": [
+        {
+          "id": "BVA",
+          "type": "Airport",
+          "href": "#/included/airports/BVA"
+        },
+        {
+          "id": "CDG",
+          "type": "Airport",
+          "href": "#/included/airports/CDG"
+        },
+        {
+          "id": "ORY",
+          "type": "Airport",
+          "href": "#/included/airports/ORY"
+        },
+        {
+          "id": "XCR",
+          "type": "Airport",
+          "href": "#/included/airports/XCR"
+        }
+      ]
+    },
+    {
+      "type": "location",
+      "subType": "city",
+      "name": "Parisot",
+      "address": {
+        "countryCode": "FR",
+        "stateCode": "FR-81"
+      },
+      "geoCode": {
+        "latitude": 43.79997,
+        "longitude": 1.82871
+      },
+      "relationships": [
+        {
+          "id": "TLS",
+          "type": "Airport",
+          "href": "#/included/airports/TLS"
+        }
+      ]
+    }
+  ],
+  "included": {
+    "airports": {
+      "XCR": {
+        "subType": "Airport",
+        "name": "Chalons-Vatry",
+        "iataCode": "XCR",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-75"
+        },
+        "geoCode": {
+          "latitude": 48.77611,
+          "longitude": 4.18444
+        }
+      },
+      "CDG": {
+        "subType": "Airport",
+        "name": "Charles de Gaulle",
+        "iataCode": "CDG",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-75"
+        },
+        "geoCode": {
+          "latitude": 49.01278,
+          "longitude": 2.55
+        }
+      },
+      "ORY": {
+        "subType": "Airport",
+        "name": "Orly",
+        "iataCode": "ORY",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-75"
+        },
+        "geoCode": {
+          "latitude": 48.72528,
+          "longitude": 2.35944
+        }
+      },
+      "LYS": {
+        "subType": "Airport",
+        "name": "St-Exupery",
+        "iataCode": "LYS",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-69"
+        },
+        "geoCode": {
+          "latitude": 45.72639,
+          "longitude": 5.09083
+        }
+      },
+      "GNB": {
+        "subType": "Airport",
+        "name": "Grenoble-Isere",
+        "iataCode": "GNB",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-69"
+        },
+        "geoCode": {
+          "latitude": 45.36294,
+          "longitude": 5.32937
+        }
+      },
+      "TLS": {
+        "subType": "Airport",
+        "name": "Blagnac",
+        "iataCode": "TLS",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-31"
+        },
+        "geoCode": {
+          "latitude": 43.629074,
+          "longitude": 1.363819
+        }
+      },
+      "BVA": {
+        "subType": "Airport",
+        "name": "Beauvais-Tille",
+        "iataCode": "BVA",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-75"
+        },
+        "geoCode": {
+          "latitude": 49.45444,
+          "longitude": 2.11278
+        }
+      },
+      "CMF": {
+        "subType": "Airport",
+        "name": "Chambery/Aix-les-Bains",
+        "iataCode": "CMF",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-73"
+        },
+        "geoCode": {
+          "latitude": 45.63805,
+          "longitude": 5.88023
+        }
+      },
+      "LIL": {
+        "subType": "Airport",
+        "name": "Lesquin",
+        "iataCode": "LIL",
+        "address": {
+          "countryCode": "FR",
+          "stateCode": "FR-59"
+        },
+        "geoCode": {
+          "latitude": 50.57037,
+          "longitude": 3.10643
+        }
+      }
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+Hotels:
+By Hotels (Name):
+API: https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-hotels?hotelIds=ACPAR419
+Method: GET
+API Response:
+{
+  "data": [
+    {
+      "chainCode": "AC",
+      "iataCode": "PAR",
+      "dupeId": 700140792,
+      "name": "LE NOTRE DAME",
+      "hotelId": "ACPAR419",
+      "geoCode": {
+        "latitude": 48.85306,
+        "longitude": 2.34654
+      },
+      "address": {
+        "countryCode": "FR"
+      }
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-hotels?hotelIds=ACPAR419"
+    }
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Hotels:
+By City (Name):
+API: https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=GOI&radius=5&radiusUnit=KM&amenities=SWIMMING_POOL,FITNESS_CENTER,AIR_CONDITIONING,RESTAURANT,PARKING,PETS_ALLOWED,AIRPORT_SHUTTLE,WIFI,ANIMAL_WATCHING,BEACH,CASINO&ratings=5&hotelSource=ALL
+Method: GET
+API Response:
+{
+  "data": [
+    {
+      "chainCode": "CH",
+      "iataCode": "GOI",
+      "dupeId": 700056185,
+      "name": "BOGMALLO BEACH RESORT",
+      "hotelId": "CHGOIBOG",
+      "geoCode": {
+        "latitude": 15.36889,
+        "longitude": 73.83544
+      },
+      "address": {
+        "countryCode": "IN"
+      },
+      "distance": {
+        "value": 1.39,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL",
+        "AIR_CONDITIONING"
+      ],
+      "rating": 5,
+      "lastUpdate": "2022-11-17T06:00:12"
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?amenities=SWIMMING_POOL,FITNESS_CENTER,AIR_CONDITIONING,RESTAURANT,PARKING,PETS_ALLOWED,AIRPORT_SHUTTLE,WIFI,ANIMAL_WATCHING,BEACH,CASINO&cityCode=GOI&hotelSource=ALL&radius=5&radiusUnit=KM&ratings=5"
+    }
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Hotels:
+By City (Name):
+API: https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-geocode?latitude=41.397158&longitude=2.160873&radius=5&radiusUnit=KM&amenities=SWIMMING_POOL,FITNESS_CENTER&ratings=3&hotelSource=ALL
+Method: GET
+API Response:
+{
+  "data": [
+    {
+      "chainCode": "WW",
+      "iataCode": "BCN",
+      "dupeId": 700005006,
+      "name": "HOTEL BALMES",
+      "hotelId": "WWBCNBAL",
+      "geoCode": {
+        "latitude": 41.3939,
+        "longitude": 2.15901
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 0.39,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:07:29"
+    },
+    {
+      "chainCode": "UI",
+      "iataCode": "BCN",
+      "dupeId": 700094407,
+      "name": "ONIX RAMBLA",
+      "hotelId": "UIBCNHOR",
+      "geoCode": {
+        "latitude": 41.38913,
+        "longitude": 2.16627
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 1,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:06:58"
+    },
+    {
+      "chainCode": "UI",
+      "iataCode": "BCN",
+      "dupeId": 700033127,
+      "name": "SUNOTEL ASTON",
+      "hotelId": "UIBCNASN",
+      "geoCode": {
+        "latitude": 41.38921,
+        "longitude": 2.14735
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 1.43,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:06:55"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "BCN",
+      "dupeId": 700156437,
+      "name": "BERTRAN APARTHOTEL",
+      "hotelId": "HSBCNANO",
+      "geoCode": {
+        "latitude": 41.41038,
+        "longitude": 2.13973
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 2.29,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T06:00:53"
+    },
+    {
+      "chainCode": "UI",
+      "iataCode": "BCN",
+      "dupeId": 700024452,
+      "name": "CATALONIA PARK GUELL",
+      "hotelId": "UIBCNRUB",
+      "geoCode": {
+        "latitude": 41.41413,
+        "longitude": 2.14469
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 2.32,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:06:58"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "BCN",
+      "dupeId": 700161617,
+      "name": "ANDANTE HOTEL",
+      "hotelId": "HSBCNAXA",
+      "geoCode": {
+        "latitude": 41.37671,
+        "longitude": 2.1728
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 2.48,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T06:00:53"
+    },
+    {
+      "chainCode": "UI",
+      "iataCode": "BCN",
+      "dupeId": 700004635,
+      "name": "CATALONIA SAGRADA FAMILIA HOTE",
+      "hotelId": "UIBCNARA",
+      "geoCode": {
+        "latitude": 41.41255,
+        "longitude": 2.1842
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 2.59,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:06:55"
+    },
+    {
+      "chainCode": "HA",
+      "iataCode": "BCN",
+      "dupeId": 700171222,
+      "name": "08028 APARTMENTS",
+      "hotelId": "HABCN080",
+      "geoCode": {
+        "latitude": 41.38356,
+        "longitude": 2.13089
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 2.92,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3
+    },
+    {
+      "chainCode": "HA",
+      "iataCode": "BCN",
+      "dupeId": 700885894,
+      "name": "AURA PARK NORD APARTMENTS",
+      "hotelId": "HABCNAUR",
+      "geoCode": {
+        "latitude": 41.42211,
+        "longitude": 2.18118
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 3.25,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3
+    },
+    {
+      "chainCode": "BN",
+      "iataCode": "BCN",
+      "dupeId": 700028089,
+      "name": "BARCELO ATENEA MAR",
+      "hotelId": "BNBCNBAM",
+      "geoCode": {
+        "latitude": 41.40222,
+        "longitude": 2.21202
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 4.3,
+        "unit": "KM"
+      },
+      "amenities": [
+        "FITNESS_CENTER"
+      ],
+      "rating": 3
+    },
+    {
+      "chainCode": "WT",
+      "iataCode": "BCN",
+      "dupeId": 700032712,
+      "name": "TRYP BARCELONA CONDAL MAR",
+      "hotelId": "WTBCNMAR",
+      "geoCode": {
+        "latitude": 41.41267,
+        "longitude": 2.20856
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 4.33,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL",
+        "FITNESS_CENTER"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:07:03"
+    },
+    {
+      "chainCode": "UI",
+      "iataCode": "BCN",
+      "dupeId": 700024451,
+      "name": "CATALONIA MIKADO HOTEL",
+      "hotelId": "UIBCNMIR",
+      "geoCode": {
+        "latitude": 41.41599,
+        "longitude": 2.10232
+      },
+      "address": {
+        "countryCode": "ES"
+      },
+      "distance": {
+        "value": 5.31,
+        "unit": "KM"
+      },
+      "amenities": [
+        "SWIMMING_POOL"
+      ],
+      "rating": 3,
+      "lastUpdate": "2022-11-29T09:06:58"
+    }
+  ],
+  "meta": {
+    "count": 12,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-geocode?amenities=SWIMMING_POOL,FITNESS_CENTER&hotelSource=ALL&latitude=41.397158&longitude=2.160873&radius=5&radiusUnit=KM&ratings=3"
+    }
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
